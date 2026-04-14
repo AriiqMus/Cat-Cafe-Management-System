@@ -1,0 +1,253 @@
+/* ===== BASE STYLES ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcd56a;
+    color: #000;
+}
+
+/* ===== NAVIGATION BAR ===== */
+/*.nav {
+    background-color: #f0eacb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav h2 {
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: #fada7a;
+}
+
+.nav a.active {
+    color: #fcd56a;
+    font-weight: bold;
+}*/
+/*
+.user-icon {
+    margin-left: 10px;
+}*/
+
+/* ===== BOOKING SECTION ===== */
+.book-box {
+    max-width: 1000px;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.book-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.book-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.book-form {
+    display: flex;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff8dc;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+/* ===== FORM STYLES ===== */
+.user-input {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-input form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.form-control {
+    width: 250px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Table Selection Specific Styling */
+#tableSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 30px;
+    background-color: #fcd56a;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ===== TABLE DISPLAY ===== */
+.table-container {
+    width: 60%;
+    border: 2px solid black;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.table-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.table-header h1 {
+    font-size: 28px;
+}
+
+.table-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.table-column {
+    flex: 1;
+}
+
+.table-column h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.table-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.table-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff8dc;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.table-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table-image-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.table-image {
+    width: 60px;
+    height: 60px;
+    background-image: url('table.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.table-status {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.table-status.available {
+    color: green;
+}
+
+.table-status.booked {
+    color: red;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .table-columns {
+        flex-direction: column;
+    }
+
+    .book-form {
+        flex-direction: column;
+    }
+
+    .user-input,
+    .table-container {
+        width: 100%;
+    }
+    
+    .form-control {
+        width: 80%;
+    }
+    
+    .form-group label {
+        width: 80%;
+    }
+}

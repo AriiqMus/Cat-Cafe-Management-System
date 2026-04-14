@@ -1,0 +1,123 @@
+body {
+    background-color: #fcd56a;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+
+/* Homepage */
+.welcome-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 60px;
+    color: #4b3621;
+}
+
+/* Container for multiple cats */
+.cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Individual cat box */
+.cat-box {
+    text-align: center;
+    background-color: #f0eacb;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 180px;
+    transition: transform 0.2s;
+}
+.cat-box:hover {
+    transform: scale(1.05);
+}
+
+/* Rounded cat image in the list */
+.cat-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+/* Profile container (individual cat page) */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 80px;
+    background-color: #f0eacb;
+    margin: 40px auto;
+    border-radius: 30px;
+    border: 3px solid black;
+    max-width: 1000px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.cat-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px; /* increase space between image and info */
+    width: 100%;
+}
+
+/* Large rounded image for profile */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4b3621;
+}
+
+/* Text details of cat */
+.cat-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    flex: 1;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #fffaf0;
+    border: 2px solid #e0c28a; /* soft warm tone */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.cat-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #8b5e3c; 
+}
+
+.cat-info p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* View Details button */
+.cat-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3cb043;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.cat-info:hover {
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+

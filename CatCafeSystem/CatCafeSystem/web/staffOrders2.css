@@ -1,0 +1,351 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Jun 2025, 9:39:16 pm
+    Author     : ASUS TUF
+*/
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcd56a;
+    color: #000;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.nav {
+    background-color: #f0eacb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav h2 {
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: #fada7a;
+}
+
+.nav a.active {
+    color: #fcd56a;
+    font-weight: bold;
+}
+
+.user-icon {
+    margin-left: 10px;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Order List Styles */
+.filter-section {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.filter-btn.active {
+    background-color: #6d4c41;
+    color: white;
+}
+
+.orders-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.status {
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status.pending {
+    background-color: #fff3e0;
+    color: #e65100;
+}
+
+.status.paid {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status.completed {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.status.cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn, .edit-btn {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.view-btn {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.edit-btn {
+    background-color: #fff8e1;
+    color: #ff8f00;
+}
+
+.no-orders {
+    text-align: center;
+    padding: 2rem;
+    color: #757575;
+}
+
+/* Order Details Styles */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #6d4c41;
+    font-weight: 500;
+}
+
+.order-info {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-section {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-section h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #6d4c41;
+}
+
+.order-items {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.order-items h2 {
+    margin-top: 0;
+    color: #6d4c41;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.total-label {
+    text-align: right;
+    font-weight: 600;
+}
+
+.total-amount {
+    font-weight: 600;
+    color: #6d4c41;
+}
+
+/* Status Update Section */
+.status-update {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.status-update h3 {
+    margin-top: 0;
+    color: #6d4c41;
+}
+
+.status-select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.update-btn {
+    padding: 0.5rem 1rem;
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.update-btn:hover {
+    background-color: #5d4037;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #5d4037;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.alert.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+}
